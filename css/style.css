@@ -1,0 +1,36 @@
+body {
+	background-color: LightGray;
+}
+div {
+	border: 1px solid Chocolate;
+}
+/* Navigation Section */
+.top-navigation {
+	background-color: #fff;
+}
+.top-navigation > .content {
+	width: 970px;
+	height: 70px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.top-navigation .links > .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+img.logo {
+	height: 4.5em;
+}
+li {
+	float: right;
+	margin: 1.7em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+ul {
+	display: inline;
+	list-style-type: none;
+}
