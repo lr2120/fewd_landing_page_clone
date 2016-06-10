@@ -1,6 +1,9 @@
 /* Box sizing  */
-* {
-	box-sizing: border-box;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /* Making sections visible	*/
@@ -41,10 +44,7 @@ div {
 	display: inline-block;
 	margin-left: 25px;
 }
-img. logo {
-	height: 70px;
-	margin-top: 50px; 	
-}
+
 .top-navigation .links .active {
 	color: #4c5058;
 	font-weight: 500
@@ -53,5 +53,9 @@ img. logo {
 	cursor: pointer;
 	color: #3333333;
 }
-
+img. logo {
+	width: 26;
+	height: 70px;
+	margin-left: 14px; 	
+}
 
