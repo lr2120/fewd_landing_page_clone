@@ -1,28 +1,46 @@
+/* Box sizing 
+html {
+	box-sizing: border-box;
+}
+*,*: before, *:after {
+	box-sizing inherit; */
+
+/* Making sections visible	*/
 body {
-	background-color: LightGray;
+	background-color: LightGray;	
 }
 div {
 	border: 1px solid Chocolate;
 }
-/* Navigation Section */
-.top-navigation {
-	background-color: #fff;
-}
-.top-navigation > .content {
-	width: 970px;
-	height: 70px;
-	margin: 0 auto;
+
+.content {
 	padding: 0px 15px;
 }
-.top-navigation .links > .active {
+
+
+/* Navigation Section section color */
+.top-navigation {
+	background-color: #fff;	
+}
+/* Box dimensions for top nav section content */
+.top-navigation > .content {	
+	width: 970px;	
+	height: 70px;	
+	margin: 0 auto;	
+}
+
+/* Styling links selector inside top navigation */
+.top-navigation .links li { 
+	float: right; 
 	color: #4c5058;
-	font-weight: 500;
+	/*font-weight: 500; */
 }
-img.logo {
-	height: 4.5em;
+img. logo {
+	margin-left: 14px;
+	height: 70px; 	
 }
-li {
-	float: right;
+li .links{
+	display: inline-block;
 	margin: 1.7em;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -30,7 +48,7 @@ li {
 	letter-spacing: 0.03em;
 	-webkit-font-smoothing: antialiased;
 }
-ul {
+ul .links {
 	display: inline;
 	list-style-type: none;
 }
