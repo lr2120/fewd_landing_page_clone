@@ -44,9 +44,12 @@ button {
 	margin-left: 25px;
 	border: 1px solid green;
 }
-
+/* LR take notes onw what position fixed and z-index do */
 .top-navigation {
-	background-color: #fff;	
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;	
 }
 
 .top-navigation > .content {	
