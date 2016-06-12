@@ -2,50 +2,65 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 /* Making sections visible	*/
 body {
-	background-color: LightGray;	
+	background-color: LightGray;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+	border: 1px solid black;	
 }
+/*
 div {
-	border: 1px solid Chocolate;
-}
+	border: 1px solid chocolate;
+} */
+
+button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px; 
+	padding: 1rem 1.5rem;
+	width: 9.688 rem;
+	background-color: #f15a29;
+	font-size: 1.125rem;
+	color: white; 
+	display: block: 
+	margin: 0 auto;
+} 
 
 .content {
 	padding: 0px 15px;
+	width: 970px;		
+	margin: 0 auto;	
+	border: 1px solid yellow;
 }
 
-
-/* Navigation Section section color */
 .top-navigation {
 	background-color: #fff;	
 }
-/* Box dimensions for top nav section content */
+
 .top-navigation > .content {	
-	width: 970px;	
-	height: 70px;	
-	margin: 0 auto;	
+	height: 70px;
 }
 
-/* Styling links selector inside top navigation */
 .top-navigation .links { 
 	float: right; 
 	font-family: 'Roboto', sans-serif;
 	color: #838994;
 	font-size: 16px;
 	margin-top: 25px;	
-	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li { 
 	display: inline-block;
 	margin-left: 25px;
+	border: 1px solid green;
 }
 
-.top-navigation .links .active {
+.top-navigation .content .links .active {
 	color: #4c5058;
 	font-weight: 500
 }
@@ -53,9 +68,40 @@ div {
 	cursor: pointer;
 	color: #3333333;
 }
-img. logo {
-	width: 26;
+
+.top-navigation .content .logo {
 	height: 70px;
-	margin-left: 14px; 	
+	margin-left: 14px;
+	border: 1px solid orange;	
+}
+
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	background-position: center bottom; /*prevents image from being cut off at the top */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	border: 1px solid purple;
+	overflow: auto;
+}
+
+.introduction > .content {
+	height: 100%;
+	text-align: center;
+	padding: 10rem;
+
+}
+
+.introduction h1, .introduction h3 {
+	color: white;
+}
+
+.introduction h1 {
+/*	margin-top: : 17.5 rem; */
+	font-size: 3.125 rem;
+}
+.introduction h3 {
+/*	margin-top: : 1.25 rem; */
+	font-size: 1.563 rem;
 }
 
