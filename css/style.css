@@ -1,88 +1,60 @@
-/* Box sizing  */
-html {
-  box-sizing: border-box;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* Making sections visible	*/
-body {
-	background-color: LightGray;
-	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
-	border: 1px solid black;	
+html {
+	box-sizing: border-box;
 }
 
-div {
-	border: 1px solid chocolate;
-} 
-
-button {
-	text-shadow: none;
-	border-style: none;
-	border-radius: 4px; 
-	padding: 1rem 1.5rem;
-	width: 9.688 rem;
-	background-color: #f15a29;
-	font-size: 1.125rem;
-	color: white; 
-	display: block: 
-	margin: 0 auto;
-} 
+body {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+}
 
 .content {
-	padding: 0 0.938rem;
-	min-width: 37.5rem;		
+	padding: 0 0.938rem;		
 	margin: 0 auto;	
-	border: 1px solid yellow;
+	min-width: 37.5rem;
 }
 
-.links li { 
-	display: inline-block;
-	margin-left: 25px;
-	border: 1px solid green;
-}
-/* LR take notes onw what position fixed and z-index do */
+/* LR take notes*/
 .top-navigation {
 	background-color: #fff;
-	position: fixed;
+	position: fixed; /* fixed makes sure section doesn't move despite scrolling */
 	width: 100%;
-	z-index: 9999;	
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;	/* z index makes sure nav stays on top of other elements */
 }
 
 .top-navigation > .content {	
-	height: 70px;
+	height: 4.375rem;
 }
 
-.top-navigation .content .links { 
+.top-navigation .links { 
 	float: right; 
-	font-family: 'Roboto', sans-serif;
 	color: #838994;
-	font-size: 16px;
-	margin-top: 25px;	
+	font-size: 1.04rem;
+	margin-top: 1.7rem;	
 }
-/* 
-.top-navigation .links li { 
-	display: inline-block;
-	margin-left: 25px;
-	border: 1px solid green;
-}
-*/
-.top-navigation .content .links .active {
+
+.top-navigation .links li.active {
 	color: #4c5058;
 	font-weight: 500
 }
+
+.top-navigation. .links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+
 .top-navigation .links li:hover {
 	cursor: pointer;
-	color: #3333333;
+	color: #333333;
 }
 
 .top-navigation .content .logo {
-	height: 70px;
-	margin-left: 14px;
-	border: 1px solid orange;	
+	height: 4.375rem;
 }
 
 .introduction {
@@ -90,47 +62,95 @@ button {
 	background-position: center bottom; /*prevents image from being cut off at the top */
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
-	border: 1px solid purple;
+	height: 45.938rem;
 	overflow: auto;
 }
 
-.introduction > .content {
-	height: 100%;
+.introduction .buttons {
+	color: white;
 	text-align: center;
-	padding: 10rem;
+	margin top: 1.563rem;
+}
+
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29; 
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px; 
+	padding: 1rem 1.5rem;
+	color: white; 
+	font-size: 1.125rem;
+} 
+
+.links > li { 
+	display: inline-block;
+	margin: 0 12px; 
+}
+
+.introduction > .content {
+	text-align: center;
+	padding: 9rem;
 
 }
 
 .introduction h1, .introduction h3 {
 	color: white;
+	text-align: center;
+	font-weight: 300;
 }
 
 .introduction h1 {
-/*	margin-top: : 17.5 rem; */
-	font-size: 3.125 rem;
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+	display: block;
 }
+
 .introduction h3 {
-/*	margin-top: : 1.25 rem; */
-	font-size: 1.563 rem;
+	margin-top: 1.25rem;
+	font-size: 1.563rem
 }
 
 .cases {
 	background-color: #fff;
 	overflow: hidden;
-	padding: 5rem;
-	display: block;
-	margin: 0 auto;
+	padding-bottom: 5rem;
 }
-/*
-.cases .links li { 
-	width: 33.3333333%;
-	height: 4em;
-	display: inline-block;
-	box-sizing: border-box;
-	border: 1px solid green;
-}
-*/
+
 .cases .content {
+	margin-top: 7.875 rem;
+	color: #1d1e21;
 	text-align: center;
 }
+
+.social .content {
+	text-align: center;
+	padding: 10rem;
+}
+
+.social hr {
+	border-top: 1px solid #eaebec;
+}
+
+.social .icons li{
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 1.25rem 5px;
+	border: 1px solid #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
+}
+
+.social .twitter {
+	color: #55acee;
+}
+.social .facebook {
+	color: #4c66a4;
+}
+.social .instagram {
+	color: #3f729b;
+}
+
